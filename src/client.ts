@@ -452,6 +452,8 @@ export function createROClient(
  * @returns A client object
  */
 export async function createClient(
+  type: "full" | "read-only",
+  baseUrl: string,
   chainId: number,
   accountData: AccountData,
   rpcUrl: string,
